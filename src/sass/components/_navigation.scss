@@ -36,31 +36,32 @@
 }
 
 
-
-.menu-item {
-  list-style: none;
-  font-size: 1.6rem;
-  border-bottom: 1px solid $color-base-gray;
-
-  > a {
-    display: block;
-    padding: 10px;
-    background-color: $color-base-white;
-  }
-
-  @include susy-breakpoint($desktop-max-width) {  
-    float: left;
-    margin-right: 20px;
-    border: 0;
+.menu {
+  > li {
+    list-style: none;
+    font-size: 1.6rem;
+    border-bottom: 1px solid $color-base-gray;
 
     > a {
-      display: inline;
-      padding: 0;
-      background: none;
+      display: block;
+      padding: 10px;
+      background-color: $color-base-white;
     }
 
-    &:last-child {
-      margin-right: 0;
+    @include susy-breakpoint($desktop-max-width) {  
+      float: left;
+      margin-right: 20px;
+      border: 0;
+
+      > a {
+        display: inline;
+        padding: 0;
+        background: none;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
